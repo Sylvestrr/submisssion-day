@@ -1,0 +1,169 @@
+/* base css */
+html {
+    font-size: 1rem;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "SUSE", sans-serif;
+}
+
+main {
+    display: flex;
+    /* background-color: aqua; */
+    width: 100vw;
+    height: 100vh;
+}
+
+/* image container */
+.imagecontainer {
+    background-color: #fffcf8;
+    width: 45%;
+    padding: 0 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagecontainer img {
+    width: 70%;
+    padding-bottom: 2em;
+}
+
+.writeup {
+    font-size: 3em;
+    text-align: center;
+    padding-bottom: 0.5em;
+    font-family: "SUSE", sans-serif;
+    font-weight: 700;
+}
+
+.writeup span {
+    font-size: 2em;
+    padding-bottom: 2em;
+}
+
+/* formcontainer */
+.formcontainer {
+    background-color: white;
+    width: 55%;
+    padding-left: 2em;
+    margin-left: 1em; /* Added 1em for proper unit */
+}
+
+.formcontainer h1 {
+    font-size: 1.4em;
+    padding-bottom: 0.6em;
+}
+
+.formcontainer p {
+    color: gray;
+    font-size: 2em;
+}
+
+nav {
+    background-color: #635656;
+    padding: 20px;
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: #ddd;
+    text-decoration: none; /* Changed to 'none' instead of 'solid' */
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.socialmediaicons {
+    display: flex;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.copyright {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.tel {
+    padding: 10px 0;
+}
+.gridForm{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap:10px
+}
+.gridForm div{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+.gridForm input{
+    background:#fafafa;
+    width:80%;
+    padding:15px;
+    border:none;
+    border-radius:10px
+}
+.gridForm input:focus{
+    outline-color:skyblue;
+}
+.gridForm select:focus{
+outline-color:skyblue;
+}
+.gridForm select{
+    background:#fafafa;
+    width:80%;
+    padding:15px;
+    border-radius:10px;
+    border:none;
+}
+.submitBtn{
+    padding:10px 0;
+}
+.submitBtn input{
+    background:#6a6ff5;
+    padding:15px 10px;
+    width:100%;
+    color:white;
+    border:none
+}
+
+/* For phones */
+@media (max-width: 768px) {
+    .imagecontainer {
+        display: none;
+    }
+    .gridForm{
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+    
+    }
+    .gridForm input {
+        width: 100%;
+    }
+    .formcontainer{
+        width: 100%;
+        padding: 21px;
+    }
+    .select{
+        width: 100%;
+    }
+    
+}
+

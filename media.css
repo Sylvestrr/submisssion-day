@@ -1,0 +1,136 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #87A096;
+    padding: em;
+    text-align: center;
+  }
+  
+  /* Sticky Navigation */
+  nav {
+    position: sticky;
+    top: 0;
+    background-color: #333;
+    padding: 10px 0;
+    z-index: 1000;
+    width: 100%;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+  }
+  
+  nav ul li {
+    margin: 0 15px;
+    display: inline;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+  }
+  
+  /* Style for H3 Headings */
+  h3 {
+    margin: 40px 0 20px;
+    color: #333;
+    font-size: 24px;
+  }
+  
+  /* Style for Images */
+  img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Style for Videos */
+  video {
+    max-width: 100%;
+    margin: 20px auto;
+    display: block;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Container for Images */
+  img:nth-child(odd) {
+    float: left;
+    width: 48%;
+  }
+  
+  img:nth-child(even) {
+    float: right;
+    width: 48%;
+  }
+  
+  /* Clearfix for Floats */
+  body::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Media Queries */
+  
+  /* For tablets and above */
+  @media (max-width: 1024px) {
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    nav ul li {
+      margin: 11px 0;
+      ;
+    }
+  
+    img, video {
+      width: 100%;
+      float: none;
+      margin: 10px 0;
+    }
+  }
+  
+  /* For phones */
+  @media (max-width: 768px) {
+    nav{
+      height: 6em;
+    }
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+      height: 4em;
+    }
+  
+    nav ul li {
+      margin: 1;
+      height: 1em;
+    }
+  
+    img, video {
+      width: 100%;
+      float: none;
+      margin: 10px 0;
+    }
+  }
+  
