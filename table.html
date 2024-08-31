@@ -12,40 +12,46 @@
         margin: 10;
         padding: 100;
       }
-      
-
-      nav {
-        background-color: #e41111;
-        padding: 20px;
-      }
-
-      nav ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-      }
-
-      nav ul li  {
-        display: inline;
-        /* margin-top: 100; */
-        margin-right: 15px;
-      }
-
-      nav ul li a {
-        color: #ddd;
-        text-decoration: solid;
-        font-weight: bolder;
-        font-size: 20px;
-      }
-
-      nav ul li a:hover {
-        text-decoration: underline;
-      }
+      /* Sticky Navigation */
+  nav {
+    position: sticky;
+    top: 0;
+    background-color: #333;
+    padding: 10px 0;
+    z-index: 1000;
+    width: 100%;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+  }
+  
+  nav ul li {
+    margin: 0 15px;
+    display: inline;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+  }
 
       h1 {
         text-align: center;
-        color: #e41111;
+        justify-content: center;
+        color: #0a0a0a;
+        font-family: 'Times New Roman', Times, serif;
         margin-top: 20px;
       }
 
@@ -70,8 +76,9 @@
 
       th {
         background-color: #87A096;
-        color: white;
+        color: rgb(107, 57, 57);
         text-transform: uppercase;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       }
 
 

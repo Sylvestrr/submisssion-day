@@ -133,4 +133,11 @@
       margin: 10px 0;
     }
   }
-  
+  #BenAudio{
+    width: 60%;
+
+  }
+  .audiocontainer{
+    padding: 40px 40px;
+   
+  }
